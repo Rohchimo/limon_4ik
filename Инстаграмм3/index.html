@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/if__imdb_2560388.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ReachGramm</title>
+</head>
+<body>
+	<header>
+		<a href="#" title="На главную" id="logo">ReachGramm</a><span class="contact" title="О проекте"><a href="#">О проекте</a></span><span class="contact" title="Добавить запись"><a href="#">Добавить запись</a></span><span class="contact" title="Лента"><a href="#">Лента</a></span><input type="search" class="field" placeholder="Поиск...">
+		</header>
+      
+      <div id="wrapper">
+      	<div id="articles">
+      		<div class="article">	
+      		<article >
+                        <div class="img-icon"><p>40x40</p></div>
+      			<h2 align="center">Семенов Олег</h2>
+      		</article>
+                  
+      		</div>
+      	</div>
+      </div>
+		    <input type="button" onclick="notifSet ()" value="Notification">
+      
+<script>
+      function notifyMe () {
+            var notification = new Notification ("Спасибо что посетил мой сайт", {
+                  tag : "ache-mail",
+                  body : "Это Push уведомленя ",
+                  icon : "favicon/Imob.png"
+            });
+      }
+      
+      function notifSet () {
+            if (!("Notification" in window))
+                  alert ("Ваш браузер не поддерживает уведомления.");
+            else if (Notification.permission === "granted")
+                  setTimeout(notifyMe, 2000);
+            else if (Notification.permission !== "denied") {
+                  Notification.requestPermission (function (permission) {
+                        if (!('permission' in Notification))
+                              Notification.permission = permission;
+                        if (permission === "granted")
+                              setTimeout(notifyMe, 2000);
+                  });
+            }
+      }
+</script>
+</body>
+</html>
