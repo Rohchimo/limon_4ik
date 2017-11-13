@@ -1,0 +1,21 @@
+a {
+    background-color: yellow;
+    color:red;
+    text-decoration: none;
+}
+
+a:hover {
+    color:pink;
+    text-decoration: underline;
+}
+.photo {
+    width:100px;
+    height:100px;
+    border: 1px solid black;
+    float:left;
+    margin:2px;
+    padding: 100px;
+}
+#logo {
+    color:#ffaaaa;
+}

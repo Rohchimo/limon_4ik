@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Suez+One');
+/* Начало шапки*/
+
+* {
+padding: 0;
+margin: 0;
+}
+
+body , html{
+height: 100%;
+
+}
+
+a {
+color: #fa713e;
+text-decoration: none;
+transition: all.6s ease;
+-ms-transition: all.6s ease;
+-o-transition: all.6s ease;
+-moz-transition: all.6s ease;
+-webkit-transition: all.6s ease;
+}
+a:hover {
+color: #c34f25;
+text-decoration: none;
+transition: all.6s ease;
+-ms-transition: all.6s ease;
+-o-transition: all.6s ease;
+-moz-transition: all.6s ease;
+-webkit-transition: all.6s ease;
+}
+img {
+max-width: 100%;
+height: auto;
+width: auto\9; /* для ie8 */
+-webkit-transition: all 3s ease-out;
+-moz-transition: all 3s ease-out;
+-o-transition: all 3s ease-out;
+}
+
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
+}
+
+header {
+float: left;
+background-color: #343434;
+width: 99.4%;
+padding: 0.3%;
+border-bottom:  5px solid #59595a;
+}
+/* Логотип*/
+
+#logo {
+float: left;
+width: 30%;
+}
+
+header #logo a {
+width: 50px;
+height: 50px;
+float: left;
+color: white;
+}
+header #logo img {
+width: 50px;
+height: 50px;
+float: left;
+margin-left: 15%;
+}
+
+header #logo span {
+font-size: 2.5em;
+margin-left: 10px;
+font-family: 'Suez One', sans-serif;
+}
+/* Панель --> Реклама , Обратная связь*/
+#about {
+float: left;
+width: 37%;
+text-align: center;
+font-family: 'Roboto Slab', sans-serif;
+font-size: 1.4em;
+padding-top: 10px;
+}
+
+#about a {
+color: white;
+
+}
+#about a:hover {
+color: #dfdfdf;
+border-bottom: 1px solid silver;
+
+}
+#about a:last-child {
+margin-left: 10%;
+}
+/* Кнопки Вход и рагистрация*/
+#reg_auth	{
+float: right;
+width: 30%;
+}
+
+#reg_auth a {
+color: white;
+}
+#reg_auth a .but-reg {
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(236, 101, 80, 1);
+text-shadow: #454545 0 0 2px;
+border-bottom: 4px solid rgba(217, 91, 72, 1);
+font-family: 'Roboto Slab', sans-serif;
+}
+#reg_auth a:hover .but-reg {
+border-bottom: 2px solid rgba(217, 91, 72, 1) ;
+margin-top: 9px;
+}
+#reg_auth a:active .but-reg {
+border-bottom: 0;
+margin-top: 7px;
+/* Конец стилей для шапки */
+.footer {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	    
+background-color: #343434;
+width: 99.4%;
+padding: 0.3%;
+border-bottom:  5px solid #59595a;
+
+}
+.site-name{
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+}
